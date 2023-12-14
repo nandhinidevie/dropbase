@@ -1,0 +1,300 @@
+-- component heading-hero:
+caption text:
+ftd.resizing width: fill-container
+ftd.color color: $ds.colors.text-strong
+optional ftd.text-align text-align:
+
+-- ftd.text: $heading-hero.text
+width: $heading-hero.width
+color: $heading-hero.color
+role: $ds.types.heading-hero
+text-align: $heading-hero.text-align
+
+-- end: heading-hero
+
+
+-- component heading-eyebrow:
+caption text:
+ftd.resizing width: fill-container
+ftd.color color: $ds.colors.text-strong
+optional ftd.text-align text-align:
+;; todo: style: uppercase, bold, code
+
+-- ftd.text: $heading-eyebrow.text
+width: $heading-eyebrow.width
+color: $heading-eyebrow.color
+role: $ds.types.heading-small
+text-align: $heading-eyebrow.text-align
+
+-- end: heading-eyebrow
+
+
+-- component heading-large:
+caption text:
+ftd.resizing width: fill-container
+ftd.color color: $ds.colors.text-strong
+
+-- ftd.text: $heading-large.text
+width: $heading-large.width
+color: $heading-large.color
+role: $ds.types.heading-large
+
+-- end: heading-large
+
+
+-- component heading-medium:
+caption text:
+ftd.resizing width: fill-container
+ftd.color color: $ds.colors.text-strong
+
+-- ftd.text: $heading-medium.text
+width: $heading-medium.width
+color: $heading-medium.color
+role: $ds.types.heading-medium
+
+-- end: heading-medium
+
+
+-- component heading-small:
+caption text:
+ftd.resizing width: fill-container
+ftd.color color: $ds.colors.text-strong
+
+-- ftd.text: $heading-small.text
+width: $heading-small.width
+color: $heading-small.color
+role: $ds.types.heading-small
+
+-- end: heading-small
+
+
+-- component heading-tiny:
+caption text:
+ftd.resizing width: fill-container
+ftd.color color: $ds.colors.text-strong
+
+-- ftd.text: $heading-tiny.text
+width: $heading-tiny.width
+color: $heading-tiny.color
+role: $ds.types.heading-tiny
+
+-- end: heading-tiny
+
+
+
+-- component copy-lede:
+body text:
+ftd.color color: $ds.colors.text
+ftd.display display: inline
+optional ftd.text-align text-align:
+
+-- ftd.text: $copy-lede.text
+color: $copy-lede.color
+role: $ds.types.copy-large ;; TODO: add copy-lede to ftd.color-scheme
+text-align: $copy-lede.text-align
+
+-- end: copy-lede
+
+-- component copy-large:
+body text:
+ftd.color color: $ds.colors.text
+ftd.display display: inline
+optional ftd.text-align text-align:
+
+-- ftd.text: $copy-large.text
+color: $copy-large.color
+role: $ds.types.copy-large
+text-align: $copy-large.text-align
+
+-- end: copy-large
+
+
+
+-- component copy-regular:
+body text:
+ftd.color color: $ds.colors.text
+ftd.display display: inline
+optional ds.gap margin:
+optional ftd.resizing height:
+
+-- ftd.text: $copy-regular.text
+color: $copy-regular.color
+role: $ds.types.copy-regular
+display: $copy-regular.display
+margin-bottom.px if { copy-regular.margin != NULL }: $copy-regular.margin.gap
+height: $copy-regular.height
+
+-- end: copy-regular
+
+
+-- component copy-small:
+body text:
+ftd.color color: $ds.colors.text
+ftd.display display: inline
+
+-- ftd.text: $copy-small.text
+color: $copy-small.color
+role: $ds.types.copy-small
+display: $copy-small.display
+
+-- end: copy-small
+
+
+-- component fine-print:
+body text:
+ftd.color color: $ds.colors.text
+ftd.display display: inline
+
+-- ftd.text: $fine-print.text
+color: $fine-print.color
+role: $ds.types.fine-print
+display: $fine-print.display
+
+-- end: fine-print
+
+
+
+
+-- component link:
+caption or body text:
+string link:
+ftd.color color: $ds.colors.cta-primary.base
+ftd.display display: inline
+
+-- ftd.text: $link.text
+color: $link.color
+role: $ds.types.link
+display: $link.display
+link: $link.link
+
+-- end: link
+
+
+
+
+
+
+
+
+
+-- ds.page: Typography
+
+-- ds.section-column:
+
+-- ds.phosphor-icon-button: Back
+icon: arrow-left
+link: index.html
+
+-- ds.rendered:
+
+\-- heading-hero: Heading hero typography
+-- heading-hero: Heading hero typography
+
+-- end: ds.rendered
+
+
+
+-- ds.rendered:
+
+\-- heading-large: Heading large typography
+-- heading-large: Heading large typography
+
+-- end: ds.rendered
+
+
+
+-- ds.rendered:
+
+\-- heading-medium: Heading medium typography
+-- heading-medium: Heading medium typography
+
+-- end: ds.rendered
+
+
+
+-- ds.rendered:
+
+\-- heading-small: Heading small typography
+-- heading-small: Heading small typography
+
+-- end: ds.rendered
+
+
+
+-- ds.rendered:
+
+\-- heading-tiny: Heading tiny typography
+-- heading-tiny: Heading tiny typography
+
+-- end: ds.rendered
+
+
+
+-- ds.rendered:
+
+\-- copy-large:
+
+Copy large typography
+
+-- copy-large:
+
+Copy large typography
+
+-- end: ds.rendered
+
+
+
+-- ds.rendered:
+
+\-- copy-regular:
+
+Copy regular typography
+
+-- copy-regular:
+
+Copy regular typography
+
+-- end: ds.rendered
+
+
+
+-- ds.rendered:
+
+\-- copy-small:
+
+Copy small typography
+
+-- copy-small:
+
+Copy small typography
+
+-- end: ds.rendered
+
+
+
+-- ds.rendered:
+
+\-- fine-print:
+
+Fine print typography
+
+-- fine-print:
+
+Fine print typography
+
+-- end: ds.rendered
+
+
+
+-- ds.rendered:
+
+\-- link: Link typography
+link: /
+-- link: Link typography
+link: /
+
+-- end: ds.rendered
+
+-- end: ds.section-column
+
+-- end: ds.page

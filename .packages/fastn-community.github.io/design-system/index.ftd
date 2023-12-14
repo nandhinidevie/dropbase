@@ -1,0 +1,104 @@
+-- import: fastn-community.github.io/dark-flame-cs
+-- import: fastn-community.github.io/saturated-sunset-cs
+-- import: fastn-community.github.io/roboto-typography
+-- import: fastn-community.github.io/design-system/demos
+
+-- import: fastn-community.github.io/design-system/spaces as spaces-module
+export: hv, gap, insets, squishes, stretches, gaps, space-data
+
+-- import: fastn-community.github.io/design-system/radius as radius-module
+export: element-radius, radius-data
+
+-- import: fastn-community.github.io/code-block
+export: code, rendered
+
+-- import: fastn-community.github.io/design-system/form/button as button-module
+export: button, button-kind, button-variant, button-width, button-size
+
+-- import: fastn-community.github.io/design-system/header
+export: header-link
+
+-- import: fastn-community.github.io/design-system/footer as footer-module
+export: footer-heading, footer-secondary-heading, footer-link, copyright-text
+
+-- import: fastn-community.github.io/design-system/form/button-group as bg-module
+export: button-group
+
+-- import: fastn-community.github.io/design-system/layout/page as page-module
+export: page, flush, page-widths, narrow-widths, widths
+exposing: narrow-widths
+
+-- import: fastn-community.github.io/design-system/layout/section-row as section-row-module
+export: section-row
+
+-- import: fastn-community.github.io/design-system/layout/section-column as section-column-module
+export: section-column
+
+-- import: fastn-community.github.io/design-system/layout/container as container-module
+export: container
+
+-- import: fastn-community.github.io/design-system/layout/column as column-module
+export: column
+
+-- import: fastn-community.github.io/design-system/layout/row as row-module
+export: row
+
+-- import: fastn-community.github.io/design-system/layout/inline-row as inline-row-module
+export: inline-row
+
+-- import: fastn-community.github.io/design-system/form/icon-button as icon-button-module
+export: icon-button, circle-text-button, phosphor-icon-button, fa-icon-button, icon-position, phosphor-variant
+
+-- import: fastn-community.github.io/design-system/typography as typography-module
+export: heading-hero, heading-large, heading-medium, heading-small, heading-tiny, copy-large, copy-regular, copy-small, fine-print, source-code, link
+exposing: heading-large, copy-regular
+
+
+
+
+;; -- ftd.color-scheme colors: $saturated-sunset-cs.main
+-- ftd.color-scheme colors: $dark-flame-cs.main
+
+-- ftd.type-data types: $roboto-typography.types
+
+-- spaces-module.space-data spaces: $spaces-module.spaces
+-- radius-module.radius-data radius: $radius-module.radius
+
+
+
+-- ds.page:
+widths: $narrow-widths
+
+-- ds.section-column:
+spacing: $ds.spaces.vertical-gap.medium
+align: left
+
+-- ds.heading-hero: Design System
+
+-- ds.button-group:
+
+-- ds.phosphor-icon-button: Github
+icon: github-logo
+link: https://github.com/fastn-community/design-system/
+
+-- ds.phosphor-icon-button: BSD (Open Source)
+icon: scales
+link: https://github.com/fastn-community/design-system/blob/main/LICENSE
+
+-- end: ds.button-group
+
+-- ds.copy-regular:
+
+This is the package you have been waiting for!
+
+- [Buttons](form/button/)
+- [Icon Buttons](form/icon-button/)
+- [Button Group (WIP)](form/button-group/)
+- [Typography](typography/)
+- [Page](layout/page/)
+
+-- demos.demo:
+
+-- end: ds.section-column
+
+-- end: ds.page
